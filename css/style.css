@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo {
+    background-color: #0f4c81;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo h1 {
+    font-size: 40px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.usuario i {
+    font-size: 35px;
+}
+
+.usuario a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.usuario a:hover {
+    color: yellow;
+}
+
+.icones {
+    display: flex;
+    gap: 25px;
+}
+
+.icones a{
+    color: white;
+    text-decoration: none;
+}
+
+.icones i {
+    font-size: 28px;
+}
+
+.icones i:hover {
+    color: yellow; 
+}
+
+nav {
+    background-color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,.15);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #0f4c81;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+.pesquisa input {
+    width: 500px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.pesquisa button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #0f4c81;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pesquisa button:hover {
+    background-color: #1565a5;
+}
+
+.banner {
+    width: 90%;
+    margin: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.produtos {
+    width: 90%;
+    margin: 40px auto;
+}
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.produto {
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,.25);
+}
+
+.produto a{
+    text-decoration: none;
+    color: black;
+}
+
+.produto a:visited {
+    color: black;
+}
+
+.produto img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.produto h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    min-height: 55px;
+}
+
+.estrela {
+    color: orange;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.preco {
+    text-align: center;
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.produto button {
+    width: 100%;
+    padding: 12px;
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.produto button:hover {
+    background-color: #13803a;
+}
+
+.produto img.headset{
+    width: 150px;
+}
+
+.vantagens {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vantagens div {
+    flex: 1;
+    min-width: 220px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.12);
+}
+
+.vantagens i {
+    font-size: 45px;
+    color: #0f4c81;
+    margin-bottom: 15px;
+}
+
+.vantagens h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0f4c81;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p{
+    margin: 8px 0;
+}
+
+
+.oferta {
+    width: 90%;
+    margin: 35px auto;
+    background: linear-gradient(90deg, #0f4c81, #1565a5);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+.oferta h2{
+    margin-bottom: 15px;
+    font-size: 35px;    
+}
+
+.oferta p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.oferta a{
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.oferta a:hover{
+    background-color: #13803a;
+    transform: scale(1.05);
+}
+
+.tabela{
+    width:90%;
+    margin:60px auto;
+}
+
+.tabela h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#0f4c81;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f3f8ff;
+}
